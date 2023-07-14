@@ -1,0 +1,71 @@
+header {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.container {
+  margin: .5rem 1rem;
+  padding: 0 5rem 3rem;
+}
+/* cards */
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* Card */
+.card {
+  max-width: calc(280px + 2rem);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  transition: 0.25s;
+}
+.card:hover {
+  background-color: #222222;
+}
+/* title */
+.card .title {
+  text-align: center;
+  cursor: pointer;
+  transition: .25s;
+}
+.card .title:hover {
+  color: rgb(150, 150, 150);
+}
+.card .title h2 {
+  margin: .3rem 0;
+}
+/* Card image */
+.card img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 8px;
+  opacity: .75;
+  transition: .15s;
+}
+.card:hover img {
+  opacity: 1;
+}
+
+/* Card breadcrumbs */
+.card .breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+}
+.card .breadcrumbs .likes {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.card .breadcrumbs .likes i {
+  color: red;
+}
+.card .breadcrumbs .year {
+  display: flex;
+  align-items: end;
+}
